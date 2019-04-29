@@ -1,12 +1,17 @@
 # Frp 服务端
+
 **1、编译生成镜像**
+
 ```
 cd Dockerfile文件所在的目录
 docker build -t xzxiaoshan/frps .
 ```
+
 **2、创建配置文件**
+
 在目录 /opt/test/frp/server (目录自便) 中创建配置文件 frps.ini
 下面是示例，更多详见官网 https://github.com/fatedier/frp/blob/master/README_zh.md
+
 ```
 [common]
 bind_addr = 0.0.0.0
@@ -41,9 +46,13 @@ authentication_timeout = 0
 log_file = /frp/frps.log
 log_level = info
 ```
+
 **3、创建启动容器**
+
 ```
 docker run -itd -p 17000:7000 -p 17500:7500 -v /opt/test/frp/server:/frp xzxiaoshan/frps /bin/sh
 ```
+
 **4、访问**
+
 浏览器打开 http://192.168.xx.xx:17500 输入账号密码(admin/admin123456)，成功打开表示OK。
