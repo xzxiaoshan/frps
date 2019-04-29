@@ -1,7 +1,7 @@
 # Frp 服务端
 **1、编译生成镜像**
 ```
-cd Dockerfile目录
+cd Dockerfile文件所在的目录
 docker build -t xzxiaoshan/frps .
 ```
 **2、创建配置文件**
