@@ -16,6 +16,6 @@ RUN set -x && \
         rm -rf *.tar.gz && \
         rm -rf frp_${FRP_VERSION}_linux_amd64
 
-VOLUME /frp
+EXPOSE 7000 7500
 
-CMD /frps -c /frp/frps.ini
+ENTRYPOINT ["/frps","-c","/frp/frps.ini"]
