@@ -46,4 +46,4 @@ log_level = info
 docker run -itd -p 17000:7000 -p 17500:7500 -v /opt/test/frp/server:/frp xzxiaoshan/frps /bin/sh
 ```
 **4、访问**
-浏览器打开 http://192.168.xx.xx:7500 输入账号密码(admin/admin123456)，成功打开表示OK。
+浏览器打开 http://192.168.xx.xx:17500 输入账号密码(admin/admin123456)，成功打开表示OK。
