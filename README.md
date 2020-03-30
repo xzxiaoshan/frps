@@ -10,7 +10,7 @@ docker build -t xzxiaoshan/frps .
 **2、创建配置文件**
 
 在目录 /opt/test/frp/server (目录自便) 中创建配置文件 frps.ini
-下面是示例，更多详见官网 https://github.com/fatedier/frp/blob/master/README_zh.md
+下面是示例，更多详见[官网](https://github.com/fatedier/frp/blob/master/README_zh.md)  
 
 ```
 [common]
